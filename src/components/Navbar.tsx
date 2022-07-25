@@ -85,7 +85,7 @@ const Navbar = () => {
 
 						{user.image && (
 							<Link href={`/profile/${user._id}`}>
-								<>
+								<div>
 									<Image
 										width={
 											40
@@ -97,9 +97,9 @@ const Navbar = () => {
 										src={
 											user.image
 										}
-										alt="profile photo"
+										alt="user"
 									/>
-								</>
+								</div>
 							</Link>
 						)}
 						<button
